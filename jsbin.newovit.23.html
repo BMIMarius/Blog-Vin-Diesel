@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2021 by BMIMarius (http://jsbin.com/newovit/23/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Vin Diesel</title>
+<style id="jsbin-css">
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: hsla(0,0%,50%,0.1);
+  font-family: 'Open Sans', sans-serif;
+  background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/04d98e94814849.5e8817b6102e9.png")no-repeat 10% -5%;
+  width: 100%;
+}
+
+.profile-card {
+  text-align: center;
+  font-size: 190%;
+  background-color: hsla(0,0%,75%,0.5);
+  color: white;
+  padding: 0.1125rem;
+  letter-spacing: 0.5rem;
+  border: solid;
+  width: 100%;
+  margin: 0 auto 1rem;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.general-button {
+  padding: 2rem 1rem;
+  padding-top: 1.5rem;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  letter-spacing: 0.1rem;
+}
+
+.button {
+    background-color: hsla(9, 100%, 64%, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.button1 {
+   background-color: hsla(9, 100%, 64%, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.button:hover {
+	border: 1px solid #A9A9A9;
+}
+
+.button1:hover {
+	border: 1px solid #A9A9A9;
+}
+
+.profile-imagine {
+  width: 100%;
+  height: auto;
+}
+
+.imagine img {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 50%;
+  border: solid white 3px;
+  border-radius: 15px;
+}
+
+.test {
+}
+
+.name-headline {
+  background-color: hsla(0,0%,75%,0.2);
+  color: white;
+  width: 98%;
+  height: 10%;
+  border-radius: 30px;
+  border: solid white 3px;
+  margin-bottom: 1rem;
+}
+
+.name-headline, h4 p {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+  margin-top: 0.5%;
+  margin-bottom: 5%;
+  margin-left: 1%;
+}
+
+.content {
+  width: 95vw;
+  padding: 0.5rem;
+  margin: 0 auto 2rem;
+  background-color: hsla(0,0%,75%,0.2);
+  border: solid white 3px;
+  border-radius: 30px;
+}
+
+.about {
+  text-align: center;
+  font-size: 1.09rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  line-height: 1.6;
+}
+
+.about a {
+  color: white;
+}
+
+ .about a:hover {
+  color: #DCDCDC;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+.links {
+  width: 95vw;
+  margin: 0 auto 1rem;
+  text-align: center;
+  background-color: hsla(0,0%,75%,0.3);
+  border: solid white 3px;
+  border-radius: 30px;
+}
+
+.links ul li {
+  display: inline;
+  letter-spacing: 1.5rem;
+  margin: 0 auto 1rem;
+}
+
+.links, h3 {
+  margin-bottom: 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.links i {
+  color: white;
+}
+
+.links a i:hover {
+    color: #DCDCDC;
+  }
+
+@media (min-width: 768px) {
+
+   .imagine img {
+     width: 94%;
+     height: 73vh;
+     padding-bottom: 0.1%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     transition: all 0.5s ease-in-out;
+    filter: grayscale(20%);
+     border: solid white;
+     background-size: 100% 100%;
+  }
+  
+  img:hover {
+  transform: scale(1.03);
+  filter: grayscale(10%);
+}
+  
+  .profile-imagine {
+    width: 45%;
+    height: 81vh;
+    float: left;
+  }
+  
+  .profile-card h2{
+    margin-bottom: 1rem;
+  }
+  
+  .profile-card h2::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 45.515625rem;
+    background-color: white;
+    margin: 1.5rem auto;
+    margin-bottom: -2rem;
+  }
+  
+  .name-headline {
+    margin-left: 1%;
+    height: 20%;
+    width: 100%;
+    margin-bottom: 0.1%;
+    margin-top: 1%;
+  }
+  
+  .content {
+    margin-left: 1%;
+    height: 39%;
+    width: 100%;
+    margin-bottom: -8%;
+    border: solid white;
+  }
+  
+  .about {
+    margin-top: 2rem;
+  }
+  
+  .about a:hover {
+    color: #F4A460;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+  
+  .links {
+    margin-left: 1%;
+    width: 100%;
+    border: solid white;
+    margin-top: 8.1%;
+    height: 33%;
+  }
+  
+  .links i {
+    margin-left: 3rem;
+    color: white;
+    width: 10%;
+  }
+  
+   .links a i:hover {
+    color: #F4A460;
+  }
+  
+  body {
+    margin: 0;
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/04d98e94814849.5e8817b6102e9.png")no-repeat 30% 10%;
+  }
+
+.test, .name-headline, 
+.content, .links {
+  padding: 1vh;
+}
+
+.test {
+  width: 54vw;
+  height: 81vh;
+  padding: 1%;
+  margin-left: 44%;
+}
+  
+  .button {
+    float: left;
+  }
+  
+  .button1 {
+    float: right;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="profile-card">
+    <h2>Vin Diesel</h2>
+    <div class="general-button">
+    <a href="https://www.youtube.com/watch?v=iP3eFIOBU0k" title="Riddick" class="button">Like</a>
+		<a href="https://www.youtube.com/watch?v=_qyw6LC5pnE" title="Fast & Furious 9" class="button1">Follow</a>
+    </div>
+  </div>
+  <div class="profile-imagine">
+      <div class="imagine">
+        <img src="http://static.cinemagia.ro/img/db/actor/00/25/60/vin-diesel-757406l.jpg?ts=1563457656"   alt="Vin Diesel" class="testimage" title="Vin Diesel">
+      </div>
+  </div>
+  <div class="test">
+  <div class="name-headline">
+    <h4>Actor Hollywood</h4>
+    <p>from</p>
+    <p><i class="fa fa-map-marker"  title="Location" style="margin-right: 1rem;"></i> | California , USA | <i class="fa fa-flag" title="Country" style="margin-left: 1%;"></i></p>
+  </div>
+  <div class="content">
+    <p class="about">
+      | Vin Diesel, born Mark Sinclair Vincent, is an American actor, director and producer. He is best known for portraying Dominic Toretto in the movie series The Fast and the Furious, Riddick in the trilogy The Chronicles of Riddick, or for his role in the movie....<b><a href="https://ro.wikipedia.org/wiki/Vin_Diesel" target="_blank" title="About Vin Diesel">Wikipedia</a></b> |
+    </p>
+  </div>
+  <section class="links">
+    <h3>Contact Me Via :</h3>
+    <ul>
+      <li><a href="https://twitter.com/vindieselpage" title="Twiter"><i class="fa fa-twitter-square" style="font-size:30px; margin-left:3.9%;"></i></a></li>
+      <li><a href="https://www.behance.net/search/projects/?search=vindiesel" title="Behance"><i class="fa fa-behance-square" style="font-size:30px;"></i></a></li>
+      <li><a href="https://www.instagram.com/vindiesel/" title="Instagram"><i class="fa fa-instagram" style="font-size:30px;"></i></a></li>
+      <li><a href="https://ro-ro.facebook.com/VinDiesel" title="Facebook Vin Diesel"><i class="fa fa-facebook-square" style="font-size:30px;"></i></a>
+      </li>
+    </ul>
+  </section>
+  </div>
+</body>
+</html>
